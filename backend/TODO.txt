@@ -1,0 +1,6 @@
+create relationships between models.
+add conf file
+access to the file within script
+save objects
+do routers endpoints
+dockerize
