@@ -1,0 +1,16 @@
+● What problems did you have?
+- Time: I had to priorize the level of detail that I could reach by the time that I had. Some things that I should improve if 
+the test was shorter: 
+    - Configure pre-commit (LOW)
+    - Dockerize (LOW)
+    - Add config file (no tan LOW)
+    - Add serializers (LOW)
+    - Separate task app and user app. Separate views and models within the apps.
+
+- I had problems regarding to the framework knowledge. I had to search, read, test things specifics about Flask and SQLAlchemy.
+
+● Did you make any changes to the specified API design?
+Not really, I created four models instead of two, to save the Company and Address data apart from tasks and users.
+
+● Explain any additional endpoints that you may have added, and document their parameters and response format.
+I didn't add any extra endpoint apart from what the test ask for.
