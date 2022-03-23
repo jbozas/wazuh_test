@@ -1,6 +1,15 @@
-create relationships between models.
-add conf file
-access to the file within script
-save objects
-do routers endpoints
-dockerize
+@TODO: LIST
+- Create relations between models. DONE
+- Save objects. DONE
+- Make endpoints. DONE
+- Configure pre-commit (LOW)
+- Dockerize (LOW)
+- Add config file (no tan LOW)
+- Add serializers (LOW)
+- Separate task app and user app (LOW)
+
+
+
+# curl -XGET http://127.0.0.1:5000/tasks?title=delectus%20aut%20autema
+# curl -XGET http://127.0.0.1:5000/users/1/tasks?title=delectus%20aut%20autem
+# curl -XGET http://127.0.0.1:5000/users/1/tasks?completed=false
