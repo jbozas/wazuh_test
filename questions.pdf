@@ -1,6 +1,7 @@
 ● What problems did you have?
 - Time: I had to priorize the level of detail that I could reach by the time that I had. Some things that I should improve if 
-the test was shorter: 
+the test was shorter:
+    - Documentation.
     - Configure pre-commit (LOW)
     - Dockerize (LOW)
     - Add config file (no tan LOW)

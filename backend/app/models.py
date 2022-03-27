@@ -31,15 +31,16 @@ class User(db.Model):
         This should be a Serializer instead.
         """
         return {
-            'company': self.company.serialize,
-            'website': self.website,
-            'phone': self.phone,
-            'address': self.address.serialize,
             'email': self.email,
             'username': self.username,
             'name': self.name,
             'id': self.id,
+            'description': self.description,
         }
+
+    @property
+    def description(self) -> str:
+        return f'Company name:' + self.company.name + ' | Personal website: ' + self.website
 
     def retrieve_tasks(self, filters) -> dict:
         """
@@ -119,4 +120,9 @@ class Task(db.Model):
             'completed': self.completed,
             'title': self.title,
             'user_id': self.user_id,
+            'description': self.description,
         }
+
+    @property
+    def description(self) -> str:
+        return f'User name: {self.user.name}'
