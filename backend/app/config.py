@@ -1,6 +1,3 @@
-import os
-
-
 class Config:
     SECRET_KEY = 'the random string'
     SQLALCHEMY_TRACK_MODIFICATIONS = False

@@ -14,13 +14,6 @@ interface User {
   description: string;
 }
 
-// interface Task {
-//   id: number;
-//   user_id: number;
-//   title: string;
-//   completed: boolean;
-// }
-
 interface Column {
   title: string;
   dataIndex: string;

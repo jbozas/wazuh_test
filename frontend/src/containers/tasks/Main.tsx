@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import useFetch from "../useFetch";
 import GenericTable from "../../components/Table";
 import { Input, Button } from "antd";
 import { ENDPOINT } from "./constants";
@@ -18,7 +17,7 @@ export default function Main({ visible }: tableProps) {
   // }
   useEffect(() => {
     if (!data) {
-      fetch("http://127.0.0.1:5000/tasks")
+      fetch(ENDPOINT)
         .then((data) => {
           return data.json();
         })
@@ -34,7 +33,7 @@ export default function Main({ visible }: tableProps) {
   function handleFilter(e: any) {
     const input = document.querySelector(".ant-input");
 
-    fetch(`http://127.0.0.1:5000/tasks?user_id=${input?.getAttribute("value")}`)
+    fetch(`${ENDPOINT}?user_id=${input?.getAttribute("value")}`)
       .then((data) => {
         return data.json();
       })
@@ -44,7 +43,7 @@ export default function Main({ visible }: tableProps) {
   }
 
   function handleResetFilter(e: any) {
-    fetch("http://127.0.0.1:5000/tasks")
+    fetch(ENDPOINT)
       .then((data) => {
         return data.json();
       })

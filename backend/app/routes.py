@@ -1,6 +1,8 @@
-from app.models import User, Task
-from flask import jsonify, request
+from .models import User, Task
+from flask import jsonify, request, Flask
 from app import app
+
+# docker build --file=backend/Dockerfile  -t wazuh-backend .
 
 
 @app.route('/tasks', methods=["GET"])
