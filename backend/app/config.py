@@ -1,0 +1,4 @@
+class Config:
+    SECRET_KEY = 'the random string'
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
+    SQLALCHEMY_DATABASE_URI = 'postgresql://sansmdtlkdrijy:a2b365c25532e1f0e8b73a262a385fd1b5d882ea5bb93f7286b22e771ab022e5@ec2-3-222-204-187.compute-1.amazonaws.com:5432/d79hmfkl816n39'
